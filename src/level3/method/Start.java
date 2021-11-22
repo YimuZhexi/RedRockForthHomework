@@ -10,7 +10,8 @@ public class Start {
         Scanner sc = new Scanner(System.in);
         Choose choose = new Choose();
         Method method;
-        double num1 = 0;
+
+        double num1;
         if (sc.hasNextDouble()) {
             num1 = sc.nextDouble();
         } else {
@@ -21,7 +22,10 @@ public class Start {
             }
             num1 = 1;
         }
-        double num2 = 0;
+
+        String operation = sc.next();
+
+        double num2;
         if (sc.hasNextDouble()) {
             num2 = sc.nextDouble();
         } else {
@@ -32,7 +36,8 @@ public class Start {
             }
             num2 = 1;
         }
-        String operation = sc.next();
+
+
         method = choose.choose(operation);
         method.doIt(num1, num2);
     }

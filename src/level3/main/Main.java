@@ -9,9 +9,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("简易计算机（支持四则运算）");
         System.out.println("输入格式：");
-        System.out.println("①：num1 空格 num2 空格 运算符");
-        System.out.println("②：num1 回车 num2 回车 运算符 回车");
-        System.out.println("示例：①：5 3 + \n ②：5\n\t3\n\t+\n");
+        System.out.println("①：num1 空格 运算符 空格 num2");
+        System.out.println("②：num1 回车 运算符 回车 num2 回车");
+        System.out.println("示例：①：5 + 3 \n ②：5\n\t+\n\t3\n");
         while (true) {
             Start start = new Start();
             start.start();

@@ -5,7 +5,7 @@ import level3.warn.OperationWarn;
 class Choose {
     //运算方法判断
     public Method choose(String operator){
-        Method method = null;
+        Method method ;
         switch (operator) {
             case "+" -> method = new Add();
             case "-" -> method = new Subtraction();
@@ -14,7 +14,7 @@ class Choose {
             default -> {
                 method = new Add();
                 try {
-                    throw new OperationWarn("运算符输入有误");
+                    throw new OperationWarn("运算符输入有误!!!默认按照加法计算！！");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
