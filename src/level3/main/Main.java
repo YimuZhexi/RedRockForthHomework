@@ -15,6 +15,7 @@ public class Main {
         while (true) {
             Start start = new Start();
             start.start();
+            //对重复使用的判断
             System.out.println("是否继续使用：1.是\t2.否");
             String s = sc.next();
             if(s.equals("2")||s.equals("否")){
